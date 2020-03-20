@@ -12,7 +12,7 @@ function countdown () {
 }
 basic.forever(function () {
     micwert = pins.analogReadPin(AnalogPin.MIC)
-    if (micwert > 900) {
+    if (micwert > 800) {
         countdown()
     } else {
         basic.clearScreen()
